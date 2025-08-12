@@ -1,0 +1,270 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0A0A0A;
+  color: #E0E0E0;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  border-bottom: 2px solid #00FF73;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #00FF73;
+  letter-spacing: 2px;
+}
+
+nav a {
+  color: #E0E0E0;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  padding-bottom: 3px;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+nav a:hover {
+  border-bottom: 3px solid #00FF73;
+  color: #00FF73;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://i.imgur.com/4YJUXWX.png') center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  padding-top: 60px; /* for fixed header */
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin-left: 40px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #00FF73;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  color: #E0E0E0;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #00FF73;
+  color: #000;
+  padding: 14px 30px;
+  font-weight: 700;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-size: 1.1rem;
+  box-shadow: 0 0 12px #00FF73;
+}
+
+.btn:hover {
+  background-color: #00cc59;
+  box-shadow: 0 0 20px #00cc59;
+}
+
+/* Gallery Section */
+.gallery-section {
+  padding: 70px 0 50px;
+  text-align: center;
+}
+
+.gallery-section h2 {
+  font-size: 2.5rem;
+  color: #00FF73;
+  margin-bottom: 40px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border: 3px solid #00FF73;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00FF73;
+}
+
+/* Pricing Section */
+.pricing-section {
+  background-color: #121212;
+  padding: 70px 0 50px;
+  text-align: center;
+}
+
+.pricing-section h2 {
+  font-size: 2.5rem;
+  color: #00FF73;
+  margin-bottom: 40px;
+}
+
+.pricing-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background-color: #1A1A1A;
+  border-radius: 15px;
+  padding: 30px 25px;
+  max-width: 280px;
+  box-shadow: 0 0 12px #00FF73;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px #00FF73;
+}
+
+.card h3 {
+  color: #00FF73;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+.card p {
+  margin-bottom: 15px;
+  color: #ccc;
+  font-size: 1rem;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #00FF73;
+  margin-bottom: 20px;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid #00FF73;
+  color: #00FF73;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #00FF73;
+  color: #000;
+  box-shadow: 0 0 15px #00FF73;
+}
+
+/* Order Section */
+.order-section {
+  padding: 70px 0 70px;
+  text-align: center;
+}
+
+.order-section h2 {
+  font-size: 2.5rem;
+  color: #00FF73;
+  margin-bottom: 20px;
+}
+
+.order-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.order-section .btn {
+  font-size: 1.2rem;
+  padding: 16px 36px;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  padding: 25px 0;
+  text-align: center;
+  color: #777;
+  font-size: 0.9rem;
+  border-top: 2px solid #00FF73;
+}
+
+footer a {
+  color: #00FF73;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content {
+    margin: 20px;
+    padding: 25px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .pricing-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin-left: 15px;
+  }
+}
